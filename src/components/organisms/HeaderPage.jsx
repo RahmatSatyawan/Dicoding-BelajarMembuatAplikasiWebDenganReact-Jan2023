@@ -1,11 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 
-export class HeaderPage extends Component {
-  render() {
-    const searchTitle = this.props.searchTitle;
-    const onSearch = this.props.onSearchHandler;
-
-    return (
+const HeaderPage = ({ searchTitle, onSearch }) => {
+  return (
+    <div>
       <header>
         <h1>Notes</h1>
         <div className="search">
@@ -17,8 +14,8 @@ export class HeaderPage extends Component {
           ></input>
         </div>
       </header>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default HeaderPage;

@@ -155,8 +155,6 @@ main h2 {
   display: flex;
 }
 
-
-
 .action-button {
   flex: 1;
   /* display: block; */
@@ -177,26 +175,37 @@ main h2 {
   border-right: 1px solid #05989e;
 }
 
-.action .delete{
+.action .delete {
   color: #ff0000;
 }
 
-.action-button:hover, button:hover {
+.action-button:hover,
+button:hover {
   background-color: #05989e;
   color: white;
   transition: 0.5s;
 }
 
-.action-button:active, button:active {
+.action-button:active,
+button:active {
   transform: translateY(4px);
   transition: transform 0.3s ease;
 }
 
-.action-button:focus, button:focus {
+.action-button:focus,
+button:focus {
   outline: none;
 }
 
-
+footer {
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+  border-top: 1px solid #05989e;
+  font-size: 10px;
+}
 
 @media only screen and (min-width: 500px) {
   .active-note,

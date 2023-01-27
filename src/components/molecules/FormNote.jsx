@@ -3,8 +3,6 @@ import React, { Component } from "react";
 export class FormNote extends Component {
   constructor(props) {
     super(props);
-    // const addNote = this.props.addNote;
-    // inisialisasi state
     this.state = {
       title: "",
       body: "",

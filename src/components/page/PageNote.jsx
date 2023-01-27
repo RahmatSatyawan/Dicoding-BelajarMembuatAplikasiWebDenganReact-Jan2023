@@ -5,7 +5,7 @@ import MainPage from "../organisms/MainPage";
 import FooterPage from "../organisms/FooterPage";
 
 import { getInitialData } from "../../utils/data";
-import Header from "../organisms/Header";
+
 
 export class PageNote extends Component {
   constructor(props) {
@@ -77,10 +77,6 @@ export class PageNote extends Component {
           searchTitle={this.state.searchTitle}
           onSearch={this.onSearchHandler}
         ></HeaderPage>
-        <Header
-          searchTitle={this.state.searchTitle}
-          onSearch={this.onSearchHandler}
-        ></Header>
         <MainPage
           dataNotes={dataNotes}
           addNote={this.onAddNoteHandler}

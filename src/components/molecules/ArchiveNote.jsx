@@ -8,15 +8,6 @@ export class ArchiveNote extends Component {
     const dataNotesArchived = dataNotes.filter((note) => {
       return note.archived === true;
     });
-    const dataShowArchived = () => {
-      if (dataNotesArchived.length > 0) {
-        return dataNotesArchived.map((note) => (
-          <CardNote {...note} key={note.id} />
-        ));
-      } else {
-        return <EmptyMessage />;
-      }
-    };
 
     const onDelete = this.props.onDelete;
     const onArchive = this.props.onArchive;
@@ -38,7 +29,6 @@ export class ArchiveNote extends Component {
         ) : (
           <EmptyMessage />
         )}
-        <div>{dataShowArchived()}</div>
       </>
     );
   }
